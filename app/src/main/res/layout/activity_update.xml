@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/display_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_information"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/alt"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/display_text"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_image_24"/>
+
+    <EditText
+        android:id="@+id/menuNameUpdate"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/twotone_drive_file_rename_outline_24"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_menu_name"
+        android:inputType="textPersonName|textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/menuDescUpdate"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuNameUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/twotone_food_bank_24"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_menu_desc"
+        android:inputType="textPersonName|textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/menuPriceUpdate"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuDescUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/baseline_attach_money_24"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_menu_price"
+        android:inputType="textPersonName|textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/menuPriceUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/alt"
+        android:text="@string/add_menu"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
